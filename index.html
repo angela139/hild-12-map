@@ -1,18 +1,96 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Display a map on a webpage</title>
-<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-<link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
-<link href="styles.css" rel="stylesheet">
-<script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
-</head>
-<body>
-<div id="map">
 
-</div>
- 
+<head>
+    <meta charset="utf-8">
+    <title>HILD 12 Map Project</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+</head>
+
+<body>
+    <h1 id="title">HILD 12 Final Project</h1>
+    <div class="card-info">
+        <div class="card-1">
+            <div class="container">
+                <img src="korean-family.jpg" alt="Image" style="width:100%">
+                <h4><b>Scenario</b></h4>
+                <p>For this map, we will be following a hypothetical Korean family (Kims) through generations of racial
+                    capitalism from Japan from 1910-1992</p>
+            </div>
+        </div>
+        <div class="card-2">
+            <div class="container">
+                <img src="honam-map.png" alt="Image" style="width:40%; height:40%; position: relative; left: 30%;">
+                <img src="honam.jpeg" alt="Image" style="width:100%">
+                <h4><b>1910 - Beginning of Japanese occupation of Korea</b></h4>
+                <p>Japanese began migrating to Korea and begin their take over.
+                    A Japanese agricultural company Taki Seihi Company, started by Taki Kumejiro, acquires land in
+                    the fertile lands of Honam Plains in Korea.
+                </p>
+            </div>
+        </div>
+        <div class="card-3">
+            <div class="container">
+                <img src="gimje.jpeg" alt="Image" style="width:100%">
+                <h4><b>Kimje/Gimje Plantation Work</b></h4>
+                <p>They build their headquarters along with a large plantation at Kimje/Gimje. Some members of the Kim
+                    family begin working on their plantation. They are given low wages and face terrible working
+                    conditions due to the Japanese unchecked economic power in Korea.
+                </p>
+            </div>
+        </div>
+        <div class="card-4">
+            <div class="container">
+                <img src="plantation.jpeg" alt="Image" style="width:100%">
+                <h4><b>Moving to Befu-cho</b></h4>
+                <p>Taki Kumejiro uses his profits from the Kimje plantation to grow a fertilizer business in Befu-cho,
+                    Japan. The Kim family workers are forced to move to Befu-cho by the Taki Seihi Company where they
+                    continue to face difficult conditions. The Koreans are seen as inferior to the Japanese.
+                </p>
+            </div>
+        </div>
+        <div class="card-5">
+            <div class="container">
+                <img src="coal-mine.jpg" alt="Image" style="width:100%">
+                <h4><b>1932 - Beginning of Manchukuo</b></h4>
+                <p>Manchukuo is a puppet state set up by Japan in Northeast China. The members of the Kim family that
+                    stayed in Korea move to Manchukuo to escape the poverty and horrible conditions in Korea from the
+                    Japanese takeover. They begin working in coal mines alongside Chinese workers, as the coal industry
+                    is a huge part of the Japanese energy industry. However, they continue to feel marginalized and
+                    excluded by the Koreans and Chinese.
+                </p>
+            </div>
+        </div>
+        <div class="card-6">
+            <div class="container">
+                <img src="yanbian.jpeg" alt="Image" style="width:100%">
+                <h4><b>1945 - end of Japanese control in Korea</b></h4>
+                <p>Korea gains independence from Japan, but the Korean War ensues between North (communist) and South
+                    Korea (democratic). This severely damages both economies. Koreans in Manchukuo are given the region
+                    of Yanbian Korean Autonomous Prefecture. The Kim family get settled in the region, living near the
+                    Tumen River which borders North Korea. They regularly see North Korean refugees who cross the river
+                    to escape the bad conditions in North Korea.
+                </p>
+            </div>
+        </div>
+        <div class="card-7">
+            <div class="container">
+                <img src="south-korea.jpeg" alt="Image" style="width:100%">
+                <h4><b>Late 1980s - early 1990s - Korean Wind</b></h4>
+                <p>Some members of the Kim family migrate to South Korea to make more money amid the economic struggle
+                    in Yanbian. They send money back to their family members and hope to be reunited soon.
+                </p>
+            </div>
+        </div>
+        <button id="start" onclick="start()">Click to Start</button>
+        <button id="back" onclick="back()">Go Back to Start</button>
+    </div>
+    <div id="map"></div>
+
 </body>
 <script src="script.js"></script>
+
 </html>
