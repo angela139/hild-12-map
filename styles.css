@@ -29,7 +29,7 @@ body {
     transition: 0.3s;
   }
   
-.card-1:hover {
+.card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover, .card-5:hover, .card-6:hover, .card-7:hover {
 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -38,12 +38,14 @@ padding: 2px 16px;
 }
 .card-2, .card-3, .card-4, .card-5, .card-6, .card-7 {
     display: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
 #start, #back {
     font-family: Georgia, 'Times New Roman', Times, serif;
     position: relative;
-    margin-top: 2%;
+    margin-top: 2.5%;
     left: 40%;
     cursor: pointer;
     outline: 0;

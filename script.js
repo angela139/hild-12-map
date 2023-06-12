@@ -53,7 +53,7 @@ function start() {
     scenario.style.display = "none";
     page_counter += 1;
     let next_card = document.getElementsByClassName(`card-${page_counter}`)[0];
-    next_card.style.display = "inline";
+    next_card.style.display = "block";
     document.querySelector('#start').innerHTML = 'Next';
 
     // New map location 
@@ -77,7 +77,7 @@ function start() {
     location_counter += 1;
     if (location_counter == 6){
         document.getElementById("start").style.display = "none";
-        document.getElementById("back").style.display = "inline";
+        document.getElementById("back").style.display = "inline-block";
     }
 }
 
@@ -124,7 +124,7 @@ function back(){
     page_counter = 1;
     location_counter = 0;
     let scenario = document.getElementsByClassName(`card-${page_counter}`)[0];
-    scenario.style.display = "inline";
+    scenario.style.display = "block";
     document.getElementById("start").style.display = "inline-block";
     document.getElementById("back").style.display = "none";
     document.querySelector('#start').innerHTML = 'Click to Start';
