@@ -1,4 +1,5 @@
 # hild-12-map
+### This is a website for a map that displays the journey of a Korean family through Japanese colonialism in history. Access it [here](https://angela139.github.io/hild-12-map/).
 ### Image Sources
 1. [Korean Family](https://www.freepik.com/premium-vector/korean-family-personality-set_6513746.htm)
 2. [Honam Field](https://www.gettyimages.fi/videos/honam)
